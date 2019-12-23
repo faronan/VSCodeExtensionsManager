@@ -8,7 +8,7 @@ difference() {
 difference_array=(`difference "${fetch[*]}" "${current[*]}"`)
 
 if [ ${#difference_array[@]} -eq 0 ]; then
-  echo "no diff!"
+  printf '\033[32m%s\033[m\n' 'No diff!'
 fi
 
 for diff in ${difference_array[@]}; do
