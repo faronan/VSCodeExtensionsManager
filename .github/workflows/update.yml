@@ -13,13 +13,19 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    - name: Run a script
+    - name: Setup a package
       run: |
         sudo apt -y update
         sudo apt -y install jq
-        pip install yq
-        chmod +x script/auto_update.sh
-        script/auto_update.sh
+    - name: Setup a pip package
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Run a script
+      run: script/auto_update.sh
       env:
         GIST_URL: ${{ secrets.GIST_URL }}
     - name: Create Pull Request
