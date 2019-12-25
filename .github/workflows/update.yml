@@ -1,8 +1,6 @@
 name: Create PullRequest extensions update
 
-on:
-  schedule:
-  - cron: "0 15 * * *"
+on: push
 
 jobs:
   update:
