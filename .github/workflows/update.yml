@@ -19,10 +19,9 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        key: ${{ runner.os }}-pip-yq
         restore-keys: |
           ${{ runner.os }}-pip-
-      run: pip install yq
     - name: Run a script
       run: script/auto_update.sh
       env:
