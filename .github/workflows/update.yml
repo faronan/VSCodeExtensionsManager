@@ -13,8 +13,8 @@ jobs:
         python-version: 3.7
     - name: Setup a package
       run: |
-          sudo apt -y update
-          sudo apt -y install jq
+        sudo apt -y update
+        sudo apt -y install jq
     - name: Setup a pip package
       uses: actions/cache@v1
       with:
