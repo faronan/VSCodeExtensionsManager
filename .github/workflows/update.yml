@@ -22,8 +22,7 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-      run: |
-        pip install yq
+      run: pip install yq
     - name: Run a script
       run: script/auto_update.sh
       env:
