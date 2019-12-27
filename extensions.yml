@@ -12,6 +12,7 @@ colorizer:
   - IBM.output-colorizer # *.log ファイルの着色
   - oderwat.indent-rainbow #インデントに着色
   - mechatroner.rainbow-csv #CSVのカラムに着色
+  - wraith13.background-phi-colors #テキストの背景を着色
 highlight:
   - wayou.vscode-todo-highlight #TODOやFIXMEを強調表示
   - vincaslt.highlight-matching-tag #対応するタグを強調表示
@@ -48,4 +49,3 @@ other:
   - Shan.code-settings-sync #VSCodeの設定同期
   - WakaTime.vscode-wakatime #時間計測wakatime
 undefind:
-  - wraith13.background-phi-colors
