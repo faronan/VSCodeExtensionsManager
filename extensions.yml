@@ -36,6 +36,8 @@ bash:
   - rogalmic.bash-debug # bashデバッグ
   - rogalmic.zsh-debug #zshデバッグ
   - mads-hartmann.bash-ide-vscode #language server
+python:
+  - ms-python.python
 rust:
   - rust-lang.rust # language server
 code:
@@ -49,4 +51,3 @@ other:
   - Shan.code-settings-sync #VSCodeの設定同期
   - WakaTime.vscode-wakatime #時間計測wakatime
 undefind:
-  - ms-python.python
