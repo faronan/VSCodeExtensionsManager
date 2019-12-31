@@ -36,6 +36,8 @@ bash:
   - rogalmic.bash-debug # bashデバッグ
   - rogalmic.zsh-debug #zshデバッグ
   - mads-hartmann.bash-ide-vscode #language server
+python:
+  - ms-python.python
 rust:
   - rust-lang.rust # language server
 code:
