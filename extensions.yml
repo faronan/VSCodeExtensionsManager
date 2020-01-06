@@ -51,3 +51,4 @@ other:
   - Shan.code-settings-sync #VSCodeの設定同期
   - WakaTime.vscode-wakatime #時間計測wakatime
 undefind:
+  - GrapeCity.gc-excelviewer
