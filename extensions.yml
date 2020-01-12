@@ -50,5 +50,5 @@ other:
   - xyz.local-history #ファイル保存時に自動でバックアップ(not git)
   - Shan.code-settings-sync #VSCodeの設定同期
   - WakaTime.vscode-wakatime #時間計測wakatime
+  - GrapeCity.gc-excelviewer #Excel Viewer
 undefind:
-  - GrapeCity.gc-excelviewer
