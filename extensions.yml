@@ -44,6 +44,8 @@ code:
   - VisualStudioExptTeam.vscodeintellicode #汎用補完入力
   - esbenp.prettier-vscode #汎用コードフォーマッター
   - vadimcn.vscode-lldb #デバッグ
+db:
+  - ms-mssql.mssql #SQL server
 other:
   - MS-CEINTL.vscode-language-pack-ja #日本語化
   - fabiospampinato.vscode-todo-plus #TODOをツリーに表示
@@ -52,4 +54,4 @@ other:
   - WakaTime.vscode-wakatime #時間計測wakatime
   - GrapeCity.gc-excelviewer #Excel Viewer
 undefind:
-  - ms-mssql.mssql
+
