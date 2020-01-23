@@ -54,3 +54,4 @@ other:
   - WakaTime.vscode-wakatime #時間計測wakatime
   - GrapeCity.gc-excelviewer #Excel Viewer
 undefind:
+  - formulahendry.vscode-mysql
