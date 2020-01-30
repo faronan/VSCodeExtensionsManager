@@ -27,15 +27,15 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         # The message to use when committing changes.
-        commit-message: Update extensions.yml
+        commit-message: Add `git diff HEAD | grep "^+\s.*" | awk  '{ print $3 }'` by ${{ github.event.number }}
         # The email address of the commit author.
         author-email: ${{ secrets.EMAIL }}
         # The name of the commit author.
         author-name: ${{ secrets.NAME }}
         # The title of the pull request.
-        title: Update extensions.yml
+        title: Add `git diff HEAD | grep "^+\s.*" | awk  '{ print $3 }'`
         # The body of the pull request.
-        body: Update
+        body: git diff HEAD | grep "^+\s.*"
         # The pull request branch name.
         branch: auto_update
         # The branch suffix type.
