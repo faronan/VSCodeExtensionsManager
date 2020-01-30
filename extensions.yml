@@ -48,3 +48,9 @@ other:
   - Shan.code-settings-sync #VSCodeの設定同期
   - WakaTime.vscode-wakatime #時間計測wakatime
 undefind:
+  - GrapeCity.gc-excelviewer
+  - formulahendry.vscode-mysql
+  - johnpapa.vscode-peacock
+  - ms-mssql.mssql
+  - ms-python.python
+  - wraith13.background-phi-colors
