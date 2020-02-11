@@ -46,6 +46,7 @@ code:
   - vadimcn.vscode-lldb #デバッグ
 db:
   - ms-mssql.mssql #SQL server
+  - formulahendry.vscode-mysql #Mysqlテーブルをツリーに表示
 other:
   - MS-CEINTL.vscode-language-pack-ja #日本語化
   - fabiospampinato.vscode-todo-plus #TODOをツリーに表示
@@ -53,4 +54,5 @@ other:
   - Shan.code-settings-sync #VSCodeの設定同期
   - WakaTime.vscode-wakatime #時間計測wakatime
   - GrapeCity.gc-excelviewer #Excel Viewer
+  - johnpapa.vscode-peacock #ワークスペース毎に色付け
 undefind:
