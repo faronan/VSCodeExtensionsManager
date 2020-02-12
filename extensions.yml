@@ -56,3 +56,9 @@ other:
   - GrapeCity.gc-excelviewer #Excel Viewer
   - johnpapa.vscode-peacock #ワークスペース毎に色付け
 undefind:
+  - redhat.java
+  - vscjava.vscode-java-debug
+  - vscjava.vscode-java-dependency
+  - vscjava.vscode-java-pack
+  - vscjava.vscode-java-test
+  - vscjava.vscode-maven
