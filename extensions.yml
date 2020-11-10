@@ -56,3 +56,9 @@ other:
   - GrapeCity.gc-excelviewer #Excel Viewer
   - johnpapa.vscode-peacock #ワークスペース毎に色付け
 undefind:
+  - ChakrounAnas.turbo-console-log
+  - dbaeumer.vscode-eslint
+  - fivethree.vscode-svelte-snippets
+  - george-alisson.html-preview-vscode
+  - msjsdiag.debugger-for-chrome
+  - ritwickdey.LiveServer
