@@ -1,5 +1,11 @@
 {
-  "extensions": [
+  "git": [
+    "donjayamanne.githistory",
+    "GitHub.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "eamodio.gitlens-insiders"
+  ],
+  "unknown": [
     "apollographql.vscode-apollo",
     "bradlc.vscode-tailwindcss",
     "ChakrounAnas.turbo-console-log",
@@ -7,10 +13,7 @@
     "CoenraadS.bracket-pair-colorizer-2",
     "DavidAnson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
-    "donjayamanne.githistory",
     "dsznajder.es7-react-js-snippets",
-    "eamodio.gitlens",
-    "eamodio.gitlens-insiders",
     "esbenp.prettier-vscode",
     "fabiospampinato.vscode-todo-plus",
     "firsttris.vscode-jest-runner",
@@ -19,7 +22,6 @@
     "foxundermoon.next-js",
     "foxundermoon.shell-format",
     "george-alisson.html-preview-vscode",
-    "GitHub.vscode-pull-request-github",
     "GrapeCity.gc-excelviewer",
     "GraphQL.vscode-graphql",
     "IBM.output-colorizer",
