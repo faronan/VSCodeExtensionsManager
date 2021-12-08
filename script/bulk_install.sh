@@ -1,14 +1,14 @@
 if [ $# != 1 ]; then
   # 引数で指定しなかった場合は、全extensionsをインストールする
-  json_length=$(cat extensions.json | jq ".[]" | jq -s add | jq length)
-  for i in $(seq 0 $(expr ${json_length} - 1)); do
-    extension=$(cat extensions.json | jq ".[]" | jq -s add | jq ".[${i}]" | sed 's/"//g')
-    code --install-extension $extension
-  done
+  json_content=$(cat extensions.json | jq ".[]" | jq -s add)
 else
-  json_length=$(cat extensions.json | jq ".${1}" | jq -s add | jq length)
+  json_content=$(cat extensions.json | jq ".${1}")
+fi
+
+json_length=$(echo $json_content | jq length)
+if [ ${json_length} != 0 ]; then
   for i in $(seq 0 $(expr ${json_length} - 1)); do
-    extension=$(cat extensions.json | jq ".${1}[${i}]" | sed 's/"//g')
+    extension=$(echo $json_content | jq ".[${i}]" | sed 's/"//g')
     code --install-extension $extension
   done
 fi
