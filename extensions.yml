@@ -56,3 +56,30 @@ other:
   - GrapeCity.gc-excelviewer #Excel Viewer
   - johnpapa.vscode-peacock #ワークスペース毎に色付け
 undefind:
+  - ChakrounAnas.turbo-console-log
+  - GraphQL.vscode-graphql
+  - MariusAlchimavicius.json-to-ts
+  - Orta.vscode-jest
+  - Prisma.prisma
+  - apollographql.vscode-apollo
+  - bradlc.vscode-tailwindcss
+  - dbaeumer.vscode-eslint
+  - dsznajder.es7-react-js-snippets
+  - eamodio.gitlens-insiders
+  - firsttris.vscode-jest-runner
+  - fivethree.vscode-svelte-snippets
+  - formulahendry.auto-rename-tag
+  - foxundermoon.next-js
+  - george-alisson.html-preview-vscode
+  - kumar-harsh.graphql-for-vscode
+  - ms-python.vscode-pylance
+  - ms-toolsai.jupyter
+  - ms-toolsai.jupyter-keymap
+  - ms-toolsai.jupyter-renderers
+  - msjsdiag.debugger-for-chrome
+  - mtxr.sqltools
+  - mtxr.sqltools-driver-mysql
+  - mtxr.sqltools-driver-pg
+  - ritwickdey.LiveServer
+  - steoates.autoimport
+  - yzane.markdown-pdf
