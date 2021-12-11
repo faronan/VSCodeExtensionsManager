@@ -48,8 +48,8 @@ def create_extension_table_element(extension):
 
 
 def main():
-    json_open = open("extensions.json", "r")
-    json_load = json.load(json_open)
+    with open("extensions.json", "r") as j_r:
+        json_load = json.load(j_r)
     extension_list = flatten(json_load.values())
 
     content = [
@@ -61,8 +61,8 @@ def main():
         headers=["name", "desc", "installs", "image"],
         value_matrix=content,
     )
-    with open("extensions.md", "w") as f:
-        writer.stream = f
+    with open("extensions.md", "w") as m_f:
+        writer.stream = m_f
         writer.write_table()
 
 
