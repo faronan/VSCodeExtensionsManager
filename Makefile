@@ -1,4 +1,5 @@
 run:
+		poetry run python ./script/update_setting.py
 		poetry run python ./script/convert.py
 
 lint:
