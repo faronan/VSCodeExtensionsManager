@@ -18,7 +18,7 @@ def create_soup(url):
 
 def get_desc(soup):
     shortdesc = soup.select(
-        "#section-banner > div > table > tbody > tr > td.item-header > div > ",
+        "#section-banner > div > table > tbody > tr > td.item-header > div > "
         "div.ux-item-shortdesc",
     )[0].get_text()
     return shortdesc
@@ -26,7 +26,7 @@ def get_desc(soup):
 
 def get_install_count(soup):
     install_count = soup.select(
-        "#section-banner > div > table > tbody > tr > td.item-header > div >",
+        "#section-banner > div > table > tbody > tr > td.item-header > div >"
         "div.ux-item-second-row-wrapper > div.ux-item-rating > span",
     )[0].get_text()
     return install_count
