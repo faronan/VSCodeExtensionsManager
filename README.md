@@ -2,7 +2,7 @@
 
 拡張機能 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)を使って、VSCodeの拡張機能をJSONとMarkdownファイルで管理します。
 
-拡張機能の追加を検知して、Github Actionsが自動でPRを作成します。
+拡張機能の追加を検知して、GitHub Actionsが自動でPRを作成します。
 
 ## Requirement
 - `code`コマンド (https://code.visualstudio.com/docs/setup/mac)  
@@ -32,9 +32,9 @@ $ python script/convert.py
 #### 4. Settings Syncの設定
 作成したGistの extensions.json > Raw をクリックして、JSONが取得できるURLを記録します。
 
-#### 5. GithubActionsの設定
+#### 5. GitHubActionsの設定
 
-Githubのページから、Settings > Secrets をクリックして、環境変数に`GIST_URL`(4で記録したURLからハッシュ値を取り除いたURL)を設定します。
+GitHubのページから、Settings > Secrets をクリックして、環境変数に`GIST_URL`(4で記録したURLからハッシュ値を取り除いたURL)を設定します。
 (https://docs.launchdarkly.com/home/code/github-actions)
 
 ※ `https://gist.githubusercontent.com/[ユーザー名]/[Gist ID]/raw/[ハッシュ値]/extensions.json` 
