@@ -3,7 +3,7 @@ name: Create PullRequest extensions update
 on: push
 
 jobs:
-  update:
+  create_pr:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: 3.10.0
           architecture: x64
-      - name: Setup
+      - name: Set up packages
         run: |
           pip install poetry
           poetry config virtualenvs.create false
@@ -25,11 +25,16 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update extensions.yml
+          commit-message: update extensions
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: auto_update
           branch-suffix: short-commit-hash
           delete-branch: true
-          title: Update extensions.yml
-          body: Update
+          title: "[Auto update] Update extensions"
+          body: |
+            Update report
+            - Updated extensions
+              - extensions.json
+              - extensions.md
+            - ref. [create-pull-request](${{ secrets.GIST_URL }})
