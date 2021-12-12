@@ -48,22 +48,28 @@ def create_extension_table_element(extension):
 
 
 def main():
-    with open("extensions.json", "r") as j_r:
+    json_file = "extensions.json"
+    with open(json_file, "r") as j_r:
         json_load = json.load(j_r)
-    extension_list = flatten(json_load.values())
 
-    content = [
-        flatten([[extension], create_extension_table_element(extension)])
-        for extension in extension_list
-    ]
+    md_file = "extensions.md"
+    with open(md_file, "w") as m_w:
+        m_w.write("# Extensions\n\n")
 
-    writer = MarkdownTableWriter(
-        headers=["name", "desc", "installs", "image"],
-        value_matrix=content,
-    )
-    with open("extensions.md", "w") as m_f:
-        writer.stream = m_f
-        writer.write_table()
+    for key, value in json_load.items():
+        content = [
+            flatten([[extension], create_extension_table_element(extension)])
+            for extension in value
+        ]
+        writer = MarkdownTableWriter(
+            headers=["name", "desc", "installs", "image"],
+            value_matrix=content,
+        )
+
+        with open(md_file, "a") as m_a:
+            writer.stream = m_a
+            m_a.write("## {}\n\n".format(key))
+            writer.write_table()
 
 
 if __name__ == "__main__":
