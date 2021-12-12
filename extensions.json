@@ -14,7 +14,10 @@
     "steoates.autoimport",
     "VisualStudioExptTeam.vscodeintellicode"
   ],
-  "GraphQL": ["GraphQL.vscode-graphql", "kumar-harsh.graphql-for-vscode"],
+  "GraphQL": [
+    "GraphQL.vscode-graphql",
+    "kumar-harsh.graphql-for-vscode"
+  ],
   "python": [
     "ms-python.python",
     "ms-python.vscode-pylance",
@@ -30,8 +33,14 @@
     "ms-azuretools.vscode-docker",
     "ms-vscode-remote.remote-containers"
   ],
-  "CSV": ["GrapeCity.gc-excelviewer", "mechatroner.rainbow-csv"],
-  "markdown": ["yzane.markdown-pdf", "yzhang.markdown-all-in-one"],
+  "CSV": [
+    "GrapeCity.gc-excelviewer",
+    "mechatroner.rainbow-csv"
+  ],
+  "markdown": [
+    "yzane.markdown-pdf",
+    "yzhang.markdown-all-in-one"
+  ],
   "text write": [
     "ICS.japanese-proofreading",
     "streetsidesoftware.code-spell-checker",
@@ -51,5 +60,6 @@
     "vscode-icons-team.vscode-icons",
     "Shan.code-settings-sync",
     "mrmlnc.vscode-duplicate"
-  ]
+  ],
+  "unknown":[]
 }
