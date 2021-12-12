@@ -34,7 +34,7 @@ def get_install_count(soup):
 
 def get_img(soup):
     src = soup.select("#vss_2 > img")[0].get("src")
-    markdown_img = "![Alternate text]({})".format(src)
+    markdown_img = '<img src = {} width = "100px" >'.format(src)
     return markdown_img
 
 
