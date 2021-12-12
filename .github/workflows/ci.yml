@@ -1,0 +1,42 @@
+name: Create PullRequest extensions update
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.10.0
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10.0
+          architecture: x64
+      - name: Set up packages
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install --no-interaction --no-ansi
+      - name: Run
+        run: make run
+        env:
+          GIST_URL: ${{ secrets.GIST_URL }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: update extensions
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: auto_update
+          branch-suffix: short-commit-hash
+          delete-branch: true
+          title: "[Auto update] Update extensions"
+          body: |
+            Update report
+            - Updated extensions
+              - extensions.json
+              - extensions.md
+            - ref. [gist setting](${{ secrets.GIST_URL }})
