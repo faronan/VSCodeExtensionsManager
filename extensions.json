@@ -61,5 +61,8 @@
     "Shan.code-settings-sync",
     "mrmlnc.vscode-duplicate"
   ],
-  "unknown":[]
+  "unknown": [
+    "christian-kohler.path-intellisense",
+    "ms-toolsai.jupyter-keymap"
+  ]
 }
