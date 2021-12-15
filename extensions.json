@@ -12,7 +12,8 @@
     "bradlc.vscode-tailwindcss",
     "naumovs.color-highlight",
     "steoates.autoimport",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "VisualStudioExptTeam.vscodeintellicode",
+    "christian-kohler.path-intellisense"
   ],
   "GraphQL": [
     "GraphQL.vscode-graphql",
@@ -22,7 +23,8 @@
     "ms-python.python",
     "ms-python.vscode-pylance",
     "ms-toolsai.jupyter",
-    "ms-toolsai.jupyter-renderers"
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.jupyter-keymap"
   ],
   "shell": [
     "foxundermoon.shell-format",
@@ -61,5 +63,5 @@
     "Shan.code-settings-sync",
     "mrmlnc.vscode-duplicate"
   ],
-  "unknown":[]
+  "unknown": []
 }
