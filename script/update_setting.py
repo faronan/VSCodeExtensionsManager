@@ -35,6 +35,9 @@ def main():
         for key, value in json_file_load.items()
     }
 
+    if(len(rm_extensions) == 0 & len(add_extensions) == 0):
+        return
+
     with open("extensions.json", "w") as j_w:
         json.dump(content, j_w, indent=2)
         # 手元でファイルを更新する時との差分が生じないように、末尾改行を入れる。
