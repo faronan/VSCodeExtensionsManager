@@ -45,8 +45,7 @@
   ],
   "text write": [
     "ICS.japanese-proofreading",
-    "streetsidesoftware.code-spell-checker",
-    "taichi.vscode-textlint"
+    "streetsidesoftware.code-spell-checker"
   ],
   "colorizer": [
     "IBM.output-colorizer",
