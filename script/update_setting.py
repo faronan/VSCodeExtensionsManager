@@ -5,6 +5,8 @@ import os
 import requests
 from dotenv import load_dotenv
 
+from convert import convert
+
 
 def flatten(iter):
     return list(itertools.chain.from_iterable(iter))
@@ -19,7 +21,8 @@ def main():
 
     url = os.environ["GIST_URL"]
     res = requests.get(url)
-    gist_extension_set = set([j["metadata"]["publisherId"] for j in res.json()])
+    gist_extension_set = set([j["metadata"]["publisherId"]
+                             for j in res.json()])
 
     with open("extensions.json", "r") as j_r:
         json_file_load = json.load(j_r)
@@ -30,14 +33,17 @@ def main():
 
     content = {
         key: create_extensions_array(
-            key, value, rm_extensions, (add_extensions if key == "unknown" else ())
+            key, value, rm_extensions, (add_extensions if key ==
+                                        "unknown" else ())
         )
         for key, value in json_file_load.items()
     }
 
+    # ファイルの差分がなくても、拡張機能のDL数が増えると差分が生じてしまうので、明示的にreturnを入れる
     if(len(rm_extensions) == 0 & len(add_extensions) == 0):
         return
 
+    convert()
     with open("extensions.json", "w") as j_w:
         json.dump(content, j_w, indent=2)
         # 手元でファイルを更新する時との差分が生じないように、末尾改行を入れる。

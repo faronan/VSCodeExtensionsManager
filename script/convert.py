@@ -47,7 +47,7 @@ def create_extension_table_element(extension):
     return [desc, install_count, img]
 
 
-def main():
+def convert():
     json_file = "extensions.json"
     with open(json_file, "r") as j_r:
         json_load = json.load(j_r)
